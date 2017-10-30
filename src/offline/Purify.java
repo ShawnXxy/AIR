@@ -17,7 +17,7 @@ public class Purify {
 		MongoClient mongoClient = new MongoClient();
 		MongoDatabase db = mongoClient.getDatabase(DBUtil.DB_NAME);
 		// The name of the file to open.
-		String fileName = "/Users/shawn/Documents/百度云同步盘/文档/workspace/MapreduceRecommendation/ratings_Musical_Instruments.csv";
+		String fileName = "/Users/shawn/Documents/workspace/LinkItem/ratings_Musical_Instruments.csv";
 
 		String line = null;
 
