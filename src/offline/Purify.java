@@ -28,13 +28,11 @@ public class Purify {
 			while ((line = bufferedReader.readLine()) != null) {
 				String[] values = line.split(",");
 
-				db.getCollection("ratings")
-						.insertOne(
+				db.getCollection("ratings").insertOne(
 								new Document()
 										.append("user", values[0])
 										.append("item", values[1])
-										.append("rating",
-												Double.parseDouble(values[2])));
+										.append("rating",Double.parseDouble(values[2])));
 
 			}
 			System.out.println("Import Done!");
